@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
 model = YOLO('api/all_elements.pt')
-img = cv2.imread('api/Screenshot 2024-01-19 000410.png')
+img = cv2.imread('api/default_1280-720-screenshot.webp')
 
 classes_ = {0: 'Button', 1: 'Edit Text', 2: 'Header Bar', 3: 'Image Button', 4: 'Image View', 5: 'Text Button', 6: 'Text View'}
 

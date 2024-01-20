@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
 model = YOLO('api/popup_det.pt')
-img = cv2.imread('api/Screenshot 2024-01-19 175935.png')
+img = cv2.imread('api/default_1280-720-screenshot.webp')
 
 classes_ = {0: 'noti', 1: 'pop'}
 
@@ -47,4 +47,5 @@ def plot_img_bbox(img, target):
         a.add_patch(rect)
     plt.show()
 
+# if length of boxes is zero that means no deceptive popups were found
 plot_img_bbox(img, boxes)
